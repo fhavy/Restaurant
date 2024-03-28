@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.horizontal-scroll{
+  @apply overflow-x-auto py-4 px-2 scroll-smooth flex-nowrap
+}
+.generic-header{
+  background: linear-gradient(rgba(104, 185, 22, 0.6), rgba(104, 185, 22, 0.6)), url('http://localhost:3000/media/images/gallery/img9.jpg') no-repeat center center/cover;
+}
+.nav-link{
+  @apply text-gray-600 hover:text-main font-semibold
+}
+.nav-link.active{
+  @apply text-main hover:text-main-200
+}
+.mobile-menu{
+  height: calc(100vh - 64px);
+  z-index: 9999;
+}
+.Toastify__progress-bar--success {
+  background: rgb(104, 185, 22);
+}
+.Toastify__toast-icon > svg {
+  fill: rgb(104, 185, 22);
+}
+.section-heading{
+  @apply mb-10 text-center
+}
+.section-heading-title{
+  @apply uppercase font-bold text-2xl mb-3
+}
+.section-heading-label{
+  @apply text-gray-500 text-sm
+}
+
+.wcu-card{
+  @apply shadow-lg p-6 rounded-lg flex flex-col gap-4 items-center text-center
+}
+
+.special-card{
+  @apply rounded-lg shadow-lg p-3
+}
+
+.featured-card{
+  @apply shadow rounded-lg hover:shadow-main overflow-hidden
+}
+
+.testimonial-card{
+  @apply shadow-lg rounded-lg text-center flex flex-col gap-4 p-4 basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4
+}
+
+.hide-scrollbar{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}
+.form-group{
+  @apply mb-4 px-3 block
+}
+.form-control{
+  @apply p-2 outline-none w-full border rounded-lg hover:shadow-sm hover:shadow-main focus:shadow-sm focus:shadow-main
+}
+
+/* .testimonial-card {
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+.footer-link {
+  @apply text-gray-50 hover:text-light
+}
